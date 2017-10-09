@@ -1,0 +1,49 @@
+.wc-header {
+    background-color: #515151;
+    color: #ADD8E6;
+    text-align: center;
+    border-radius: 10px 10px 0 0 ;
+}
+
+.wc-message-groups {
+    background:radial-gradient(black 15%, transparent 36%) 0 0,
+    radial-gradient(black 15%, transparent 36%) 8px 8px,
+    radial-gradient(rgba(255,255,255,.1) 35%, transparent 20%) 0 1px,
+    radial-gradient(rgba(255,255,255,.1) 35%, transparent 20%) 8px 9px;
+    background-color: #282828;
+    background-size:16px 16px;
+}
+
+.wc-message-from {
+    color: #CACACA;
+}
+
+.wc-message-from-me .wc-message-content {
+    background-color: #264f78;
+    color: #7cdcf0;
+    border-radius: 10px 10px 0;}
+
+
+.wc-message-from-bot .wc-message-content {
+    background-color: #613214;
+    color: #cfba5c;
+    border-radius: 10px 10px 10px 0px;}
+
+.wc-message-from-me svg.wc-message-callout path, .wc-message-from-bot svg.wc-message-callout path {
+    fill: none;
+}
+
+.wc-console {
+    border: none;
+    border-top: 5px solid #515151;
+    background-color: #111111;
+}
+
+.wc-textbox input{
+    background-color: #111111;
+    color: #7cdcf0;
+}
+
+.wc-console.has-text .wc-send svg {
+    color:#8a8a8a;
+}
