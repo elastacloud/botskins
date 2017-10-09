@@ -1,0 +1,78 @@
+html{
+    background-color: #515151;
+}
+
+.wc-chatview-panel{
+    border-radius: 5px;
+}
+
+.wc-header{
+    border-bottom:1px solid #E6ECF0;
+    background-color: #ffffff;
+    color: #14171a;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.wc-message-groups{
+    background-color: #FFFFFF;
+}
+
+.wc-message-from {
+    color: #657786;
+}
+
+.wc-message-from-me .wc-message-content {
+    background-color: #1DA1F2;
+    color: #FFFFFF;
+    border-radius: 20px 20px 0;
+    padding: 8px 12px;
+}
+
+.wc-message-from-bot .wc-message-content {
+    background-color: #e6ecf0;
+    color: #14171a;
+    border-radius: 20px 20px 20px 0;
+    padding: 8px 12px;
+}
+
+.wc-message-from-me svg.wc-message-callout path, .wc-message-from-bot svg.wc-message-callout path {
+    fill: none;
+}
+
+.wc-console{
+    border:none;
+    border-top: 1px solid #e6ecf0;
+    padding: 10px 0;
+    background-color: #e8f5fd;
+}
+
+.wc-console > * {
+    top: 10px;
+}
+
+.wc-console svg {
+    margin: 6px 10px;
+}
+
+.wc-console textarea, .wc-console input[type=text] {
+    border-radius: 5px;
+    padding: 5px;
+    height: 50%;
+    border: 1px solid #c6e7fb;
+}
+
+.wc-textbox{
+    right:60px;
+}
+
+.wc-console svg {
+    fill:none;
+    stroke: #45b1f4;;
+    stroke-width: 1;
+}
+
+.wc-console .wc-upload svg{
+    stroke-width: 2;
+}
