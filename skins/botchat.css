@@ -24,9 +24,10 @@ body .wc-app, .wc-app button, .wc-app input, .wc-app textarea {
   visibility: hidden; }
 
 .wc-header {
-
+  background-color: #3a96dd;
   box-shadow: 0 1px rgba(0, 0, 0, 0.2);
   box-sizing: content-box;
+  color: #ffffff;
   font-weight: 500;
   height: 30px;
   left: 0;
@@ -42,7 +43,6 @@ body .wc-app, .wc-app button, .wc-app input, .wc-app textarea {
   margin-bottom: 10px; }
 
 .wc-message-groups {
-
   bottom: 50px;
   left: 0;
   transform: translateY(0);
@@ -197,6 +197,7 @@ body .wc-app, .wc-app button, .wc-app input, .wc-app textarea {
 
 .wc-message-from {
   clear: both;
+  color: #999999;
   font-size: 11px;
   margin-top: 5px; }
 
@@ -375,10 +376,12 @@ body .wc-app, .wc-app button, .wc-app input, .wc-app textarea {
 .wc-message-from-me.wc-message-from {
   text-align: right; }
 
+.wc-message-from-me .wc-message-content {
+  background-color: #3a96dd;
+  color: #ffffff; }
 
-  /*
 .wc-message-from-me svg.wc-message-callout path {
-  fill: #3a96dd; }*/
+  fill: #3a96dd; }
 
 .wc-message-from-me svg.wc-message-callout path.point-left {
   display: none; }
@@ -391,9 +394,12 @@ body .wc-app, .wc-app button, .wc-app input, .wc-app textarea {
   float: left;
   margin-left: 8px; }
 
-/*
+.wc-message-from-bot .wc-message-content {
+  background-color: #eceff1;
+  color: #000000; }
+
 .wc-message-from-bot svg.wc-message-callout path {
-  fill: #eceff1; }*/
+  fill: #eceff1; }
 
 .wc-message-from-bot svg.wc-message-callout path.point-right {
   display: none; }
@@ -451,7 +457,7 @@ body .wc-app, .wc-app button, .wc-app input, .wc-app textarea {
 
 .wc-mic.hidden {
   visibility: hidden; }
-  
+
 .wc-mic.active path#micFilling {
   fill: #4e3787; }
 

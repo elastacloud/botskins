@@ -13,21 +13,21 @@
     * userid, username = id (and optionally name) of bot user
     * botid, botname = id (and optionally name) of bot
 -->
-<html>
+<html id="html">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <title>Bot Chat</title>
 
-    <link href="../../skins/botchat.css" rel="stylesheet" />
+    <link href="../skins/botchat.css" rel="stylesheet" />
     <!--Facebook-->
-    <link href="../../skins/fbSkin.css" rel="stylesheet" />
-    <!--Visual Studio
-    <link href="../../skins/vsSkin.css" rel="stylesheet" />-->
-    <!--Snow Animation shown over VS Skin
-    <link href="../../skins/snowSkin.css" rel="stylesheet" />-->
-    <!--Twitter Skin
-    <link href="../../skins/twitSkin.css" rel="stylesheet" />-->
+    <link href="../skins/fbSkin.css" rel="stylesheet" />
+    <!--Visual Studio -->
+    <link href="../../skins/vsSkin.css" rel="stylesheet" />
+    <!--Snow Animation shown over VS Skin -->
+    <link href="../../skins/snowSkin.css" rel="stylesheet" >
+    <!--Twitter Skin -->
+    <link href="../../skins/twitSkin.css" rel="stylesheet" />
 
     <style>
       .example {
@@ -66,6 +66,23 @@
 
         BotChatGoesHere.classList.add(className);
       }
+      function toggleStyleName(style) {
+        const BotChatGoesHere = document.getElementById('BotChatGoesHere');
+
+        ['twitter', 'facebook', 'vs', 'snow', 'default'].forEach(function (c) {
+          BotChatGoesHere.classList.remove(c);
+          document.getElementById('html').classList.remove('twitter');
+        });
+
+        if(style === 'twitter'){
+          document.getElementById('html').classList.add('twitter');
+        }
+
+        if(style != 'default'){
+          BotChatGoesHere.classList.add(style);
+        }
+
+      }
     </script>
   </head>
   <body>
@@ -78,8 +95,18 @@
         <button onclick="toggleClassName('wc-normal')">normal</button>
         <button onclick="toggleClassName('wc-wide')">wide</button>
       </p>
+    </section>
+
+    <section class="example">
       <p>
-        Important: you will need to set the <b>resize</b> option to <b>'detect'</b> when instantiating the Web Chat.
+        Click below to alter the skin of the chatbot:
+      </p>
+      <p>
+        <button onclick="toggleStyleName('twitter')">Twitter</button>
+        <button onclick="toggleStyleName('facebook')">Facebook</button>
+        <button onclick="toggleStyleName('vs')">Visual Studio</button>
+        <button onclick="toggleStyleName('snow')">Animated example</button>
+        <button onclick="toggleStyleName('default')">Default</button>
       </p>
     </section>
 
