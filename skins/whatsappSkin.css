@@ -1,0 +1,89 @@
+html.whatsapp{
+    background-color: #009688;
+}
+
+.whatsapp .wc-header{
+    background-color: #EEEEEE;
+    box-shadow: none;
+    font-size: 16px;
+    line-height: 21px;
+    color: #000;
+    padding-left: 16px;
+    padding-right: 15px;
+    border: 1px solid rgba(0,0,0,0.08);
+}
+
+/*Wallpaper image used directly from Whatsapp Web*/
+.whatsapp .wc-chatview-panel{
+    background-image:
+    linear-gradient(rgba(229, 221, 213, 0.9), rgba(229, 221, 213, 0.9)), 
+    url('../images/whatsapp-wallpaper.png');
+}
+
+.whatsapp .wc-message-from-me .wc-message-content {
+    background-color: #dcf8c6;
+    color: #4b4b4b;
+    border-radius: 7px 0 7px 7px;
+}
+
+.whatsapp .wc-message-from-bot .wc-message-content{
+    background-color: #FFFFFF;
+    color: #262626;
+    border-radius: 0 7px 7px 7px;
+}
+
+.whatsapp .wc-message-from-me svg.wc-message-callout path.point-left,
+.whatsapp .wc-message-from-me svg.wc-message-callout path.point-right,
+.whatsapp .wc-message-from-me svg.wc-message-callout path.point-top-left {
+    display:none;
+}
+
+.whatsapp .wc-message-from-me .wc-message-content svg path.point-top-right{
+    display: block;
+    fill: #dcf8c6;
+}
+
+.whatsapp .wc-message-from-bot svg.wc-message-callout path.point-left,
+.whatsapp .wc-message-from-bot svg.wc-message-callout path.point-right,
+.whatsapp .wc-message-from-bot svg.wc-message-callout path.point-top-right {
+    display:none;
+}
+
+.whatsapp .wc-message-from-bot .wc-message-content svg path.point-top-left{
+    display: block;
+    fill: #FFFFFF;
+}
+
+.whatsapp .wc-message svg.wc-message-callout {
+    top: 0;
+}
+
+.whatsapp .wc-console{
+    background-color: #f5f1ee;
+    border-color: #f5f1ee;
+}
+
+.whatsapp .wc-console textarea, .whatsapp .wc-console input[type=text] {
+    border-radius: 5px;
+    padding-left: 10px;
+    color: #4d4d4d;
+}
+
+.facebook .wc-textbox input::placeholder{
+    color: #a4a4a4;
+}
+
+.whatsapp .wc-textbox{
+    right:60px;
+}
+
+.whatsapp .wc-console svg {
+    fill: none;
+    stroke:#989b9d;
+    stroke-width: 1;
+}
+
+.whatsapp .wc-console .wc-upload svg{
+    stroke: none;
+    fill: #989b9d;
+}

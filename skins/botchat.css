@@ -515,3 +515,9 @@ body .wc-app, .wc-app button, .wc-app input, .wc-app textarea {
 
 .wc-app ::-webkit-scrollbar-thumb {
   background-color: #dbdee1; }
+
+/*REMOVES SVGS ADDED FOR WHATSAPP STYLING*/
+svg.wc-message-callout path.point-top-left,
+svg.wc-message-callout path.point-top-right {
+  display:none;
+}

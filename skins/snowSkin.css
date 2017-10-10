@@ -27,13 +27,15 @@
 .snow .wc-message-from-me .wc-message-content {
     background-color: #264f78;
     color: #7cdcf0;
-    border-radius: 10px 10px 0;}
+    border-radius: 10px 10px 0;
+}
 
 
 .snow .wc-message-from-bot .wc-message-content {
     background-color: #613214;
     color: #cfba5c;
-    border-radius: 10px 10px 10px 0px;}
+    border-radius: 10px 10px 10px 0px;
+}
 
 .snow .wc-message-from-me svg.wc-message-callout path, .snow .wc-message-from-bot svg.wc-message-callout path {
     fill: none;

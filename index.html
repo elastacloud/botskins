@@ -20,14 +20,16 @@
     <title>Bot Chat</title>
 
     <link href="../skins/botchat.css" rel="stylesheet" />
+    <!--Twitter Skin-->
+    <link href="../skins/twitSkin.css" rel="stylesheet" />
     <!--Facebook-->
     <link href="../skins/fbSkin.css" rel="stylesheet" />
+    <!--WhatsApp Skin-->
+    <link href="../../skins/whatsappSkin.css" rel="stylesheet" />
     <!--Visual Studio -->
-    <link href="../../skins/vsSkin.css" rel="stylesheet" />
+    <link href="../skins/vsSkin.css" rel="stylesheet" />
     <!--Snow Animation shown over VS Skin -->
-    <link href="../../skins/snowSkin.css" rel="stylesheet" >
-    <!--Twitter Skin -->
-    <link href="../../skins/twitSkin.css" rel="stylesheet" />
+    <link href="../skins/snowSkin.css" rel="stylesheet" >
 
     <style>
       .example {
@@ -69,13 +71,13 @@
       function toggleStyleName(style) {
         const BotChatGoesHere = document.getElementById('BotChatGoesHere');
 
-        ['twitter', 'facebook', 'vs', 'snow', 'default'].forEach(function (c) {
+        ['twitter', 'facebook', 'whatsapp', 'vs', 'snow', 'default'].forEach(function (c) {
           BotChatGoesHere.classList.remove(c);
-          document.getElementById('html').classList.remove('twitter');
+          document.getElementById('html').classList.remove(c);
         });
 
-        if(style === 'twitter'){
-          document.getElementById('html').classList.add('twitter');
+        if(style === 'twitter' || style === 'whatsapp'){
+          document.getElementById('html').classList.add(style);
         }
 
         if(style != 'default'){
@@ -104,10 +106,12 @@
       <p>
         <button onclick="toggleStyleName('twitter')">Twitter</button>
         <button onclick="toggleStyleName('facebook')">Facebook</button>
+        <button onclick="toggleStyleName('whatsapp')">WhatsApp*</button>
         <button onclick="toggleStyleName('vs')">Visual Studio</button>
         <button onclick="toggleStyleName('snow')">Animated example</button>
         <button onclick="toggleStyleName('default')">Default</button>
       </p>
+      <p>* WhatsApp styling includes a change to botchat.js including extra svg paths</p>
     </section>
 
     <div id="BotChatGoesHere"></div>

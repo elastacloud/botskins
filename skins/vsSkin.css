@@ -31,13 +31,14 @@
     border-radius: 10px 10px 10px 0px;
 }
 
-.vs .wc-message-from-me svg.wc-message-callout path, .wc-message-from-bot svg.wc-message-callout path {
+.vs .wc-message-from-me svg.wc-message-callout path, .vs .wc-message-from-bot svg.wc-message-callout path {
     fill: none;
 }
 
 .vs .wc-console {
     border: none;
     border-top: 5px solid #515151;
+    border-bottom: 5px solid #111111;
     background-color: #111111;
 }
 

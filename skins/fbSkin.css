@@ -36,6 +36,9 @@
     color:#e0e0e0;
 }
 
+.facebook .wc-console label{
+    margin-top: 5px;    
+}
 
 .facebook .wc-message-from-bot .wc-message-content {
     background-color:#f1f0f0; 
