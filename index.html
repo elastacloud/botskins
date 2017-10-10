@@ -19,29 +19,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <title>Bot Chat</title>
 
-    <link href="../skins/botchat.css" rel="stylesheet" />
+    <!--Page Styling -->
+    <link href="styles/pages.css" rel="stylesheet" />
+    <!--Default-->
+    <link href="../styles/skins/botchat.css" rel="stylesheet" />
     <!--Twitter Skin-->
-    <link href="../skins/twitSkin.css" rel="stylesheet" />
+    <link href="../styles/skins/twitSkin.css" rel="stylesheet" />
     <!--Facebook-->
-    <link href="../skins/fbSkin.css" rel="stylesheet" />
+    <link href="../styles/skins/fbSkin.css" rel="stylesheet" />
     <!--WhatsApp Skin-->
-    <link href="../../skins/whatsappSkin.css" rel="stylesheet" />
+    <link href="../styles//skins/whatsappSkin.css" rel="stylesheet" />
     <!--Visual Studio -->
-    <link href="../skins/vsSkin.css" rel="stylesheet" />
+    <link href="../styles/skins/vsSkin.css" rel="stylesheet" />
     <!--Snow Animation shown over VS Skin -->
-    <link href="../skins/snowSkin.css" rel="stylesheet" >
+    <link href="../styles/skins/snowSkin.css" rel="stylesheet" >
 
     <style>
-      .example {
-        float: left;
-        margin-right: 20px;
-        width: 300px;
-      }
-
-      .example > h2 {
-        font-family: 'Segoe UI';
-      }
-
       #BotChatGoesHere {
         float: left;
         height: 600px;
@@ -80,41 +73,44 @@
           document.getElementById('html').classList.add(style);
         }
 
-        if(style != 'default'){
-          BotChatGoesHere.classList.add(style);
-        }
-
+        BotChatGoesHere.classList.add(style);
       }
     </script>
   </head>
   <body>
-    <section class="example">
-      <p>
-        This example app hosts the Web Chat control as a sidebar on the page, and may be resized with these toggle buttons:
-      </p>
-      <p>
-        <button onclick="toggleClassName('wc-narrow')">narrow</button>
-        <button onclick="toggleClassName('wc-normal')">normal</button>
-        <button onclick="toggleClassName('wc-wide')">wide</button>
-      </p>
-    </section>
+    <div id="body-container">
+      <div class="options-container">
+        <div class="options">
+          <p>
+            Click below to resize the chatbot:
+          </p>
+          <p>
+            <button onclick="toggleClassName('wc-narrow')">narrow</button>
+            <button onclick="toggleClassName('wc-normal')">normal</button>
+            <button onclick="toggleClassName('wc-wide')">wide</button>
+          </p>
+        </div>
 
-    <section class="example">
-      <p>
-        Click below to alter the skin of the chatbot:
-      </p>
-      <p>
-        <button onclick="toggleStyleName('twitter')">Twitter</button>
-        <button onclick="toggleStyleName('facebook')">Facebook</button>
-        <button onclick="toggleStyleName('whatsapp')">WhatsApp*</button>
-        <button onclick="toggleStyleName('vs')">Visual Studio</button>
-        <button onclick="toggleStyleName('snow')">Animated example</button>
-        <button onclick="toggleStyleName('default')">Default</button>
-      </p>
-      <p>* WhatsApp styling includes a change to botchat.js including extra svg paths</p>
-    </section>
+        <div class="options">
+          <p>
+            Click below to alter the skin of the chatbot:
+          </p>
+          <p>
+            <button onclick="toggleStyleName('twitter')">Twitter</button>
+            <button onclick="toggleStyleName('facebook')">Facebook</button>
+            <button onclick="toggleStyleName('whatsapp')">WhatsApp*</button>
+            <button onclick="toggleStyleName('vs')">Visual Studio</button>
+            <button onclick="toggleStyleName('snow')">Animated example</button>
+            <button onclick="toggleStyleName('default')">Default</button>
+          </p>
+          <p class="smalltext">* WhatsApp styling includes a change to botchat.js including extra svg paths</p>
+        </div>
+      </div>
 
-    <div id="BotChatGoesHere"></div>
+      <div class="bot-container">
+          <div id="BotChatGoesHere" class="default"></div>          
+      </div>
+    </div>
 
     <script src="../../botchat.js"></script>
 

@@ -13,11 +13,11 @@ html.whatsapp{
     border: 1px solid rgba(0,0,0,0.08);
 }
 
-/*Wallpaper image used directly from Whatsapp Web*/
+
 .whatsapp .wc-chatview-panel{
     background-image:
     linear-gradient(rgba(229, 221, 213, 0.9), rgba(229, 221, 213, 0.9)), 
-    url('../images/whatsapp-wallpaper.png');
+    url('../../../images/whatsapp-wallpaper.png');
 }
 
 .whatsapp .wc-message-from-me .wc-message-content {

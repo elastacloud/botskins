@@ -521,3 +521,11 @@ svg.wc-message-callout path.point-top-left,
 svg.wc-message-callout path.point-top-right {
   display:none;
 }
+
+#BotChatGoesHere.default .wc-chatview-panel{
+  border: 1px solid #3a96dd;
+}
+
+.wc-upload{
+  left: 0;
+}

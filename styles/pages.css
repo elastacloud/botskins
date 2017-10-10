@@ -1,0 +1,22 @@
+div#body-container{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+div.options-container{
+    width:60%;
+    margin: 0 auto;
+}
+
+div.options{
+    margin-bottom: 30px;
+}
+
+div.options p.smalltext{
+    font-size: 12px;
+}
+
+div#BotChatGoesHere{
+    float:none;
+    margin: 0 auto;
+}
